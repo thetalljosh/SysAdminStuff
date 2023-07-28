@@ -45,8 +45,9 @@ foreach ($Sub in $Subs) {
         } 
     }
 }
-Write-Host "`n Orphaned VNets: " -ForegroundColor Magenta
-$orphanedVnets | ft
 
 Write-host "`n VNets in use: " -ForegroundColor Green
 $usedVnets | ft
+
+Write-Host "`n Orphaned VNets: " -ForegroundColor Magenta
+$orphanedVnets | ft
