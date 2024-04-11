@@ -5,7 +5,7 @@ function GeneratePassword {
         [Parameter(Mandatory = $false)]
         [ValidateRange(12, 256)]
         [int] 
-        $length = 14
+        $length = (Get-Random -Minimum 15 -Maximum 25)
     )
     
     $passwordBuilder = New-Object System.Text.StringBuilder
